@@ -1,0 +1,3 @@
+Hello, my name is Hairum.
+I'm a computer science major concentrating in software engineering.
+My favorite animal is a capybara :)
