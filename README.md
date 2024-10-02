@@ -1,4 +1,4 @@
-# CS_SG_tutorial
+# CSSG_Fall2024
 
 Welcome back to Tea++!
 
