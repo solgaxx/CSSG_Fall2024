@@ -16,6 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reverse the first and last name
         const reversedFirstName = reverseString(firstName);
         const reversedLastName = reverseString(lastName);
+        //Determines the legnth of the reversed name
+        const reversedNameLength = reversedFirstName.length + reversedLastName.length;
+       //Change text color based on Length
+        const jumbotronText = document.querySelector('.jumbotron h1');
+        if (reversedNameLength > 10){
+            jumbotronText.style.color = 'red';
+        } else {
+            jumbotronText.style.color = 'green';
+        }
 
         // Update the jumbotron with the reversed name
         document.querySelector('.jumbotron h1').textContent = `Reversed Name: ${reversedFirstName} ${reversedLastName}`;
