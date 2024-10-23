@@ -7,4 +7,5 @@ You can name the file with the following format: YourName_YourLastName_Info.txt
 
 Commands:
 Start server: npm i -g http-server
+
 Run server: http-server
