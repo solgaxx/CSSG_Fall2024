@@ -6,6 +6,7 @@ Today, during our intro to Git, you will be able to create a txt file to include
 You can name the file with the following format: YourName_YourLastName_Info.txt
 
 Commands:
+
 Start server: npm i -g http-server
 
 Run server: http-server
