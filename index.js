@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const reversedNameLength = reversedFirstName.length + reversedLastName.length;
        //Change text color based on Length
         const jumbotronText = document.querySelector('.jumbotron h1');
-        if (reversedNameLength > 10){
+        if (reversedNameLength > 0){
             jumbotronText.style.color = 'red';
         } else {
             jumbotronText.style.color = 'green';
