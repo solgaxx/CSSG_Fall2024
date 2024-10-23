@@ -20,8 +20,24 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update the jumbotron with the reversed name
         document.querySelector('.jumbotron h1').textContent = `Reversed Name: ${reversedFirstName} ${reversedLastName}`;
 
+        // textContent assigned d-none not removed:
+        // Determine the Length of the reversed name
+        const reversedNameLength = reversedFirstName.length + reversedLastName.length;
+
+        // Change text color based on length
+        const jumbotronText = document.querySelector('.jumbotron h1');
+        if (reversedNameLength > 10) {
+            jumbotronText.style.color = "purple";
+        } else {
+            jumbotronText.style.color = "yellow";
+        }
+
         // Show the jumbotron (remove 'd-none' class)
         document.querySelector('.jumbotron').classList.remove('d-none');
+
+        // Clear the form fields after submission
+        document.getElementById('fname').value = '';
+        document.getElementById('lname').value = '';
 
         return false;  // Prevent the page from reloading (in some browsers)
     });
